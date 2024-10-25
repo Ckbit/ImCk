@@ -39,5 +39,5 @@ wait.until(EC.element_to_be_clickable((By.XPATH, '//span[text()="Mais"]'))).clic
 wait.until(EC.element_to_be_clickable((By.XPATH, '//span[text()="Mover para..."]'))).click()
 wait.until(EC.element_to_be_clickable((By.XPATH, '//span[text()="Boletos"]'))).click()
 
-time.sleep(5)
+time.sleep(1)
 driver.quit()
