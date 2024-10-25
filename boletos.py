@@ -35,14 +35,9 @@ wait.until(EC.element_to_be_clickable((By.XPATH, '//a[@href="#select" and contai
 
 # Selecionar todos os e-mails encontrados
 wait.until(EC.element_to_be_clickable((By.ID, 'rcmbtn147'))).click()
+wait.until(EC.element_to_be_clickable((By.XPATH, '//span[text()="Mais"]'))).click()
+wait.until(EC.element_to_be_clickable((By.XPATH, '//span[text()="Mover para..."]'))).click()
+wait.until(EC.element_to_be_clickable((By.XPATH, '//span[text()="Boletos"]'))).click()
 
-# Aguardar um pouco antes de mover os e-mails
-time.sleep(1)
-
-# Clique para mover os e-mails
-driver.find_element(By.ID, 'rcmbtn103').click()  # Clique para mover
-driver.find_element(By.XPATH, '//span[text()="Boletos"]').click()  # Escolha a pasta "Boletos"
-
-# Fechar navegador
 time.sleep(5)
 driver.quit()
